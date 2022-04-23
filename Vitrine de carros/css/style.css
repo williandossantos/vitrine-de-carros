@@ -1,0 +1,786 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Oswald";
+}
+html, body{
+    height: 100%;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/*===========HEADDER========*/
+
+header .container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 2%;
+}
+
+
+.container .menu-desktop ul {
+    display: flex;
+}
+.container .menu-desktop ul li{
+    margin-right: 20px;
+}
+
+.container .menu-desktop ul li a{
+    display: block;
+    letter-spacing: 1px;
+    font-size: 19px;
+    font-style: italic;
+    color: black;
+}
+header .container .menu-mobile{
+    display: none;
+}
+/*===========BANNER========*/
+.banner{
+    width: 100%;
+    height: calc(100vh - 106px);
+    min-height: 650px;
+    background-color:black;
+    background-image: url("../img/bg.jpg");
+    background-position: right bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 0 2%;
+}
+
+.banner .container .banner-wrap{
+    
+    padding-top: 120px;
+    padding-left: 60px;
+}
+.banner .container .banner-wrap .banner-single{
+    max-width: 314px;
+    height: 80px;
+    color: white;
+    font-size: 23px;
+    font-style: italic;
+    text-transform: uppercase;
+    background-image: url("../img/box-text.png");
+    background-repeat: no-repeat;
+    background-size: 100% 90%;
+    padding: 16px 40px;
+    margin-bottom: 20px;
+}
+.banner .container .banner-wrap .banner-single:nth-of-type(2){
+    background-size: 70% 90%;
+    margin-left: -12px;
+}
+.banner .container .banner-wrap .banner-single:nth-of-type(3){
+    margin-left: -21px;
+    background-size: 50% 90%;
+}
+.banner .container .banner-wrap .banner-single:nth-of-type(4){
+    margin-left: -33px;
+    background-size: 100% 90%;
+    background-image: url("../img/box-white-text.png");
+    color: black;
+}
+
+/*============VITRINNE=============*/
+.vitrine-destaque{
+    padding: 0 2% 90px 2% ;
+}
+.vitrine-destaque .vitrine-titulo{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 90px 0;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.vitrine-destaque .vitrine-titulo .titulo{
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background: black;
+    
+}
+.vitrine-destaque .vitrine-titulo .titulo h2{
+    display: inline-block;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    top: -23px;
+    padding: 0 20px;
+    background: white;
+}
+
+.vitrine-destaque > .vitrine{
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+}
+.vitrine  .vitrine-wrap{
+    width: 100%;
+    margin-right: 10px;
+}
+.vitrine  .vitrine-wrap:nth-of-type(3){
+    margin-right: 0;
+}
+.vitrine-wrap .vitrine-img .img{
+    width: 100%;
+    padding-top: 70%;
+    background-image: url("../img/carro1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.vitrine-wrap .vitrine-texto{
+    margin-top: 15px;
+    font-style: italic;
+}
+.vitrine-wrap .vitrine-texto small{
+    display: block;
+    font-size: 15px;
+    color: #242424;
+}
+.vitrine-wrap .vitrine-texto button{
+    display: inline-block;
+    width: 140px;
+    height: 45px;
+    background-color:#EB2D2D;
+    color: white;
+    font-size: 1.1rem;
+    line-height: 45px; 
+    margin-top: 20px;
+    border: 0;
+    cursor: pointer;
+}
+/*============DESCRIÇÃO============*/
+.descricao{
+    display: flex;
+    
+}
+.servicos {
+    width: 50%;
+    padding: 50px 2%;
+    background-color: #242424;
+}
+.servicos .servicos-wrap{
+    color:#242424 ;
+    max-width: 350px;
+    margin: 0 auto;
+    
+}
+.servicos .servicos-wrap  h2{
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #EB2D2D;
+    font-style:italic;
+}
+
+.servicos  .servicos-wrap ul li a{
+    color: white;
+}
+.servicos  .servicos-wrap  button{
+    background-color: #EB2D2D;
+    padding: 8px 25px;
+    border: 0;
+    cursor: pointer;
+    color: whitesmoke;
+    margin-top: 20px;
+    font-size: 16px;
+}
+.depoimentos {
+    width: 50%;
+    padding: 50px 2%;
+    background-color: #EB2D2D;
+}
+.depoimentos-wrap {
+    max-width: 350px;
+    margin: 0 auto;
+}
+.depoimentos-wrap h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    font-style:italic;
+}
+.depoimentos-wrap p {
+    color: #f2f2f2;
+}
+.depoimentos-wrap .slide{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.depoimentos-wrap .slide .bnt-slide span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius:20px;
+    background-color: #242424;
+    margin-right: 10px;
+}
+.depoimentos-wrap .slide p{
+    font-size: 15px;
+    font-style: italic;
+    border-bottom: 1px solid #c7c7c7;
+    padding-bottom: 2px;
+}
+
+/*=============FORMULLARIO============*/
+.formulario{
+    padding: 0 2% 50px 2%;
+}
+.formulario-titulo{
+    max-width:900px;
+    margin: 0 auto;
+    padding: 50px 0;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.formulario-titulo .titulo{
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background: black;
+    
+}
+.formulario-titulo  .titulo h2{
+    display: inline-block;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    top: -23px;
+    padding: 0 20px;
+    background: white;
+}
+form .form-single{
+    max-width: 470px;
+    margin: 0 auto;
+}
+.form-single .form-wrap{
+    margin-top: 15px;
+}
+.form-wrap input{
+    width: 100%;
+    height: 40px;
+    padding-left: 15px;
+    font-weight: bold;
+    font-size: 16px;
+    font-style: italic;
+    display: block;
+    border: 1px solid #ccc;
+}
+.form-wrap input:focus,
+.form-wrap textarea:focus{
+    outline: none;
+}
+.form-wrap input::placeholder,
+.form-wrap textarea::placeholder
+{
+    color: #ccc;
+    letter-spacing: 1px;
+}
+.form-wrap .w50{
+    display:flex;
+}
+.form-wrap .w50 input{
+    margin-right: 10px;
+}
+.form-wrap .w50 input:last-child{
+    margin-right: 0;
+}
+
+.form-wrap textarea{
+    resize: none;
+    width: 100%;
+    height: 170px;
+    font-weight: bold;
+    font-size: 16px;
+    font-style: italic;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+}
+/*============FFOOTER============*/
+footer{
+    background-color:#242424 ;
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 2%;
+}
+footer .container nav ul{
+    display: flex;
+}
+footer .container nav ul li a{
+    margin-right: 20px;
+    color: white;
+}
+footer .container div p{
+    margin-right: 20px;
+    color: white;
+}
+/*=============SSEECAOVENDAS===========*/
+
+.venda-titulo{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 90px 0;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.venda-titulo .titulo{
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background: black;
+    
+}
+.venda-titulo  .titulo h2{
+    display: inline-block;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    top: -23px;
+    padding: 0 20px;
+    background: white;
+}
+.venda .container{
+    display:flex;
+    justify-content: space-between;
+    padding: 20px 2%;
+}
+.container .sidebar{
+    margin-right: 20px;
+}
+.sidebar .pesquisa1 h2{
+    font-size: 23px;
+    font-weight: normal;
+}
+.sidebar .pesquisa1 .barra-de-preco{
+    position: relative;
+    width: 300px;
+    height: 20px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    margin-top:10px ;
+}
+.sidebar .pesquisa1 .barra-preco-fill{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width:30%;
+    height: 20px;
+    background: linear-gradient(to bottom, rgb(255,255,255),rgb(200,200,200)) ;
+    border-radius: 20px;
+}
+.sidebar .pesquisa1 .pointer-barra{
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, rgb(255,255,255),rgb(180,180,180));
+    border: 1px solid black;
+    position: absolute;
+    top: 0;
+    left: calc(30% - 13px);
+}
+.sidebar .pesquisa1 .valor-pesquisa{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.container .pesquisa2{
+    margin-top: 60px;
+}
+.container .pesquisa2 h2{
+    font-size: 23px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.pesquisa2-form-wrap input[type=checkbox]{
+    display: none;
+}
+.pesquisa2-form-wrap{
+    display: flex;
+    align-items: center;
+}
+.pesquisa2-form-wrap label{
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    border: 1px solid rgb(145, 145, 145);
+    cursor: pointer;
+    position: relative;
+}
+.pesquisa2-form-wrap input[type=checkbox]:checked + label .circle{
+    display: block;
+} 
+.pesquisa2-form-wrap label .circle{
+    display: none;
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 7px;
+    background-color: red;
+    top: 6px;
+    left: 6px;
+}
+.pesquisa2-form-wrap span{
+    padding: 0 10px;
+}
+
+/*===========VVENDADSS  PRODUTO==========*/
+.vendas-produtos{
+    width: 970px;
+}
+.vendas-produtos .vendas-produtos-wrap{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.produtos-wrap{
+    width: 100%;
+    margin-right: 10px;
+}
+.produtos-wrap:nth-of-type(3){
+    margin-right: 0;
+}
+.produtos-wrap .produtos-img .img{
+    width: 100%;
+    padding-top: 70%;
+    background-image: url("../img/carro1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.produtos-wrap .produtos-texto{
+    margin-top: 15px;
+    font-style: italic;
+}
+.produtos-wrap .produtos-texto small{
+    display: block;
+    font-size: 15px;
+    color: #242424;
+}
+.produtos-wrap  .produtos-texto button{
+    display: inline-block;
+    width: 140px;
+    height: 45px;
+    background-color:#EB2D2D;
+    color: white;
+    font-size: 1.1rem;
+    line-height: 45px; 
+    margin-top: 20px;
+    border: 0;
+    cursor: pointer;
+}
+
+/*===============Veiculo==============*/
+.detalhes{
+    padding: 40px 0;
+}
+.detalhes-titulo{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 90px 2%;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.detalhes-titulo .titulo{
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background: black;
+    
+}
+.detalhes-titulo .titulo h2{
+    display: inline-block;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    top: -23px;
+    padding: 0 20px;
+    background: white;
+}
+
+.detalhes .container{
+    max-width: 900px;
+    padding:30px 2%;
+}
+.detalhes .container .detalhes-wrap{
+    display: flex;
+    justify-content: center;
+}
+.detalhes .container .detalhes-wrap-img{
+    width: 50%;
+    height: 360px;
+    margin-right: 20px;
+}
+.detalhes .container .detalhes-wrap-img .img{
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/carro1.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.detalhes .container .detalhes-texto-wrap{
+    margin-top: 10px;
+    width: 40%;
+}
+.detalhes .container .detalhes-texto-wrap p{
+    margin-top: 10px;
+}
+.detalhes .container .detalhes-texto-wrap button{
+    display: inline-block;
+    width: 140px;
+    height: 45px;
+    background-color:#EB2D2D;
+    color: white;
+    font-size: 1.1rem;
+    line-height: 45px; 
+    margin-top: 20px;
+    border: 0;
+    cursor: pointer;
+}
+/*==============SOBRE============*/
+.sobre{
+    margin-bottom: 20px;
+}
+.sobre-titulo{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 90px 2%;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.sobre-titulo .titulo{
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background: black;
+    
+}
+.sobre-titulo .titulo h2{
+    display: inline-block;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    top: -23px;
+    padding: 0 20px;
+    background: white;
+}
+.sobre .container{
+    max-width: 900px;
+    padding: 20px 2%;
+}
+.sobre .container .sobre-wrap{
+    width: 100%;
+    min-height:300px;
+    background-color:#ccc;
+    margin-bottom: 20px;
+}
+.sobre .container .sobre-texto{
+    text-align: justify;
+}
+.sobre .container .sobre-texto h2{
+    padding: 20px 0;
+    font-size: 35px;
+    font-style: italic;
+}
+/*==================================*/
+@media screen and (max-width:1000px){
+    .vendas-produtos-wrap{
+        display: inline-block;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .produtos-wrap{
+        width: 50%;
+        margin-right: 10px;
+    }
+    .produtos-wrap:last-child{
+        display:none;
+        width: 50%;
+        margin-right: 10px;
+    }
+}
+@media screen and (max-width:850px) {
+    .produtos-wrap{
+        width: 90%;
+        margin: 0  auto;
+    }
+    .produtos-wrap:nth-of-type(1n + 2){
+        display:none;
+        width: 50%;
+        margin-right: 10px;
+    }
+}
+@media screen and (max-width:760px) {
+
+    /*============HEADER=============*/
+    header .container .menu-desktop{
+        display: none;
+    }
+    header .container .menu-mobile{
+        width:50px;
+        height: 50px;
+        display: block;
+        background-image: url("../img/icon_menu.png");
+        background-position: 100% 50%;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        margin-right: 15px;
+    }
+    header .container .menu-mobile ul{
+        display:none;
+        width: 100%;
+        position: absolute;
+        top: 105px;
+        left: 0;
+        text-align: center;
+        background-color: #f2f2f2;
+        border-bottom: 4px solid #EB2D2D;
+    }
+    header .container .menu-mobile ul li a{
+        display: block;
+        padding: 20px;
+        font-size: 23px;
+        font-style: italic;
+    }
+    /*============BANNER============*/
+    .banner{
+        height: 70vw;
+        background-size:cover;
+        background-position: left center;
+    }
+    .banner .container .banner-wrap{
+        padding-left: 40px;
+    }
+    /*===============Veiculo==============*/
+    .detalhes .container{
+        max-width: 600px;
+        padding:30px 2%;
+    }
+    .detalhes .container .detalhes-wrap{
+        display: block;
+        justify-content: inherit;
+    }
+    .detalhes .container .detalhes-wrap-img{
+        width:100%;
+        margin: 0 10px auto 0;
+        display: block;
+    }
+    .detalhes .container .detalhes-wrap-img .img{
+        display: block;
+        margin: 0;
+        background-position: 50%;
+    }
+    .detalhes .container .detalhes-texto-wrap{
+       
+        width: 100%;
+        text-align: center;
+        margin:0 auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+
+}
+@media screen and (max-width:670px){
+    .venda .container{
+        display: block;
+    }
+    .venda .container .sidebar{
+        width:80%;
+        margin:  0 auto 50px auto;
+    }
+    .sidebar .pesquisa1 .barra-de-preco{
+        position: relative;
+        width: 100%;
+        height: 20px;
+        border-radius: 20px;
+        border: 1px solid #ccc;
+        margin-top:10px ;
+    }
+    .vendas-produtos{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .produtos-wrap{
+        width: 100%;
+    }
+    
+    .produtos-wrap .produtos-texto{
+        text-align: center;
+    }
+}
+@media screen and (max-width:650px){
+    /*===========VITRINE=============*/
+    
+    .vitrine-destaque > .vitrine{
+        display: initial;
+        text-align: center;
+    }
+    .vitrine .vitrine-wrap{
+        max-width: 400px;
+        margin:0 auto 50px auto;
+    }
+    .vitrine  .vitrine-wrap:last-child{
+        margin-right: inherit;
+        margin-bottom: inherit;
+    }
+    /*===========DESCRICAO=============*/
+    .descricao{
+        display: block;
+    }
+    .servicos {
+        width: 100%;
+        padding: 50px 2%;
+        background-color: #242424;
+    }
+    .depoimentos{
+        width: 100%;
+        padding: 50px 2%;
+    }
+    /*===========FFOOOTER===========*/
+    footer .container{
+        display: block;
+        text-align: center;
+    }
+    footer .container nav{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    footer .container nav ul{
+        display: block;
+    }
+    footer .container nav ul li{
+        display: inline-block;
+    }
+}
+@media screen and (max-width:631px){
+    .detalhes-titulo .titulo h2{
+        top: -45px;
+    } 
+}
+
+@media screen and (max-width:537px) {
+
+    /*==============VITRINE============*/
+    .vitrine-destaque .vitrine-titulo .titulo h2{
+        top: -45px;
+    } 
+    
+    /*=============FORMULARIO=============*/
+}
